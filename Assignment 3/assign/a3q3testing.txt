@@ -1,0 +1,21 @@
+// Name: Yinsheng Dong
+// Student Number: 11148648
+// NSID: yid164
+// Lecture Section: CMPT 115 (02)
+
+
+
+
+
+
+
+
+
+uofs-10-227-129-181:Desktop Ken$ g++ -Wall a3q3.cc NodeList.cc ListTraversal.cc
+uofs-10-227-129-181:Desktop Ken$ ./a.out
+There are    10    outputs the total number of words from the file. 
+The element     racecar     is a palindrome word.
+The element     civic     is a palindrome word.
+The element     abba     is a palindrome word.
+The element     noon     is a palindrome word.
+The element     level     is a palindrome word.

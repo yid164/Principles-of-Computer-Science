@@ -1,0 +1,61 @@
+// Name: Yinsheng Dong
+// Student Number: 11148648
+// NSID: yid164
+// Lecture Section: CMPT 115 (02)
+
+
+
+
+
+Algorithm createList()
+Create a new list
+Pre: nothing 
+Returen: a reference to a newly allocated list that is initialized to be 1
+
+	refTolist rNewList <- allocate newList
+	rList -> capacity <- 1
+	rList -> tail <- -1
+	rList -> numElement <- 0
+	rList -> elements <- allocate new Element [1]
+	return rNewList
+
+
+  
+Algorithm InsertTail (rList, el)
+Pre: rList :: a reference to a list into which to insert
+	 el :: an Element 
+Post: when the array is full, attempt to "grow" the capacity of the list, then insert.
+Return: true if successful, false otherwise
+
+	if (rlist->numElements == rList -> capacity)
+		growList(rList)
+		rList -> elements [numElements] <- el
+		rList -> numElements <- rList -> numElements + 1
+		rList -> tail <- rList -> tail + 1
+	else
+		rList -> elements [numElements] <- el
+		rList -> numElements <- rList -> numElements + 1
+		rList -> tail <- rList -> tail + 1
+	end if
+	return true
+
+
+
+Algorithm growList (rList)
+Attempt to double the capcity of rlist
+Pre: rList :: reference to a list to grow
+Post: capacity of rList has been doubled, list contents are unchanged
+Return: true if the grow operation succeeds, false otherwise
+
+	refToList rList -> NewElements <- allocate new Element [rList -> numElements+1]
+	for i from 0 to rList -> numElements
+		rList -> NewElements[i] <- rList -> element[i] 
+	delete rList -> element 
+  
+	int temp <- (2 * (rList->capacity))
+	rList -> capacity <- temp
+	if(rList->capacity == temp)
+		return true
+	else
+		return false
+	end if
