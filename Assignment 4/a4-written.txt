@@ -1,0 +1,136 @@
+// Name: Yinsheng Dong
+// Student Number: 11148648
+// NSID: yid164
+// Lecture Section: CMPT 115 (02)
+
+
+
+Question 1. 
+
+ a. Stack: 3 20; Final result: 23.
+ b. Stack: 7 5; Final result: 35.
+ c. Stack: 15 10 7; Final result: 1050.
+ d. Stack: 8 2 2 2; Final result: 20.
+ e. Stack: 2 8 2 2; Final result: 22.
+ 
+ 
+Question 2. 
+
+ a.  "+" -- "*" -- 5
+       \     \
+        \     \
+         3     4
+          
+ b.   "*" -- "+" -- 4
+        \      \
+         \      \
+          5      3
+    
+ c.   "*" -- "*" -- "+" -- 12
+ 	 \     \      \
+ 	  \	\      \
+          7    “+”—-8   3        
+ 	       / 
+ 	      /   
+ 	     2    
+ 	           
+ d.  "+" -- "+" -- "*" -- "*" -- "+" -- 2
+       \      \      \      \      \
+        \      \      \      \      \
+         2      2      2      2      2 
+         
+ 
+ e.  "+" -- "*" —- 2
+       \      \
+        \      \
+         2     “+” —- 2
+		 \   
+		  \
+		  “*” —- 2
+		    \
+		     \
+		     “+” —- 2
+		       \
+ 			\
+			 2
+
+ 	     
+ 	     
+Question 3. 
+
+Algorithm ExpressionTree (PostOrder[])
+Pre: PostOrder() :: a post order expression. 
+Post: create an expression tree.
+Return: true if expression tree create success, false otherwise 
+
+refToTree <- allocated a new tree
+
+if tree != NULL then 
+	return false
+end if 
+
+else
+
+	q <- createQueue ()
+	s <- createStack ()
+	integer a <- 1  // a is a number to count operant times
+	integer b <-0   // b is a transmitter to help insert function 
+	integer c <- 0  // c is a integer to help restore value of tree->data 
+	token (PostOrder[]) 
+	// to break everything in the PostOder[], let them become single
+	enqueue token into q
+	if q != NULL then 
+		while sizeof(q) > 0 do 
+			dequeue (q,refTree)
+			if tree is a number then 
+				// push s, and tree if there are both numbers
+				push (s, tree)
+			end if 
+			else if tree is ‘+’ or ‘-‘ or ‘*’ or ’/‘ then 
+				if a == 1 then 
+					tree->data <- tree
+					pop (num)
+					insertRight (tree->data, b)
+					insertLeft (tree->data, num)
+					c <- tree->data // restore tree->data to c
+					
+				end if 
+				else if a == 0  then
+					if s == NULL
+						tree->data <- tree
+						insertRight (tree->data, b)
+						insertLeft (tree->data, c)
+					end if 
+					else 
+						pop (num)
+						tree->data <- tree
+						insertRight (tree->data, num)
+						insertLeft (tree->data, b)
+						c <- tree->data
+					end if 
+				end if 
+				else if a>1 then 
+					pop (num1, num2)
+					tree->data <- tree
+					insertRight (tree->data,num1)
+					insertLeft (tree->data, num2)
+					c<- tree->data
+				end if 
+				
+			end if 
+		a++
+		done
+	return true
+	end if  
+	
+	else 
+	return false
+		
+	end if 
+end if 
+						
+					
+		
+
+
+ 	

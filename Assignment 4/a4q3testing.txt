@@ -1,0 +1,38 @@
+// Name: Yinsheng Dong
+// Student Number: 11148648
+// NSID: yid164
+// Lecture Section: CMPT 115 (02)
+
+
+
+uofs-10-227-129-56:Assignment4 Ken$ g++ -Wall ArrayList.cc a4q3.cc
+uofs-10-227-129-56:Assignment4 Ken$ ./a.out
+testing createList
+createList succeeded
+testing destroyList
+testing destroyList succeeded
+testing emptyList with an empty list
+testing lengthList with an empty list
+inserting an element at the tail of the list
+inserting a second element at the tail of the list
+deleting the tail of the list (going from 2 to 1 elements in the list)
+deleting the tail of the list (going from 1 to 0 elements in the list)
+inserting 10 elements
+Let's go testing the growList function 
+The capacity of the list before growing is 16
+The capacity of the list now is 32
+The growList function now is working, nice job!
+deleting 10 elements
+should print the words ten nine eight ... one
+ten
+nine
+eight
+seven
+six
+five
+four
+three
+two
+one
+testing list operations complete!
+testing complete!
