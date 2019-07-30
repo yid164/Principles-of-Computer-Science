@@ -1,0 +1,68 @@
+Name: Yinsheng Dong
+Student Number: 11148648
+NSID: yid164
+Lecture Section: CMPT115(02)
+
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+// Algorithm swap (latinSquare, col1, col2, row1, row2)
+// Pre: latinSquare :: 5 x 5 array of integers
+// 		col1 :: first column of integers
+// 		col2 :: second column of integers
+// 		row1 :: first row of integers
+//		row2 :: second row of integers
+// Post: swap latinSquare[row1][col1] and latinSquare[row2][col2]
+// Return: Nothing
+
+// integer temp <- latinSquare[row1][col1]
+// latinSquare[row1][col1] <- latinSquare[row2][col2]
+// latinSquare[row2][col2] <- temp
+
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+// Algorithm changeColumn (latinSquare, col1, col2)
+// Pre: latinSquare :: 5 x 5 array of integers
+//		col1 :: first column of integers
+//		col2 :: second column of integers
+// Post: swap col1 and col2 in latinSquare array
+// Return: Nothing
+
+// for i from 0 to 5 by 1 do
+//		swap( latinSquare,col1, col2, i, i)
+// done
+
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+// Algorithm changeRow (latinSquare, row1, row2)
+// Pre: latinSquare :: 5 x 5 array of integers
+//		row1 :: first row of integers
+//		row2 :: second row of integers
+// Post: swap row1 and row2 in latinSquare array
+// Return: Nothing
+
+// for i from 0 to 5 by 1 do
+//		swap (latinSquare, i, i, row1, row2)
+// done
+
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+// Algorithm randomSquare (latinSquare)
+// Pre: latinSquare :: 5 x 5 array of integers
+// Post: get a random square
+// Return: Nothing 
+
+// integer a <- 25
+// for i from 0 to 25 by 1 do
+// 		integer row1 <- generate a random number in the range 0..4
+//		integer row2 <- generate a random number in the range 0..4
+// 		integer col1 <- generate a random number in the range 0..4
+// 		integer col2 <- generate a random number in the range 0..4
+//		integer totalNum 
+//		if totalNum > 15
+//			then
+//			changeRow (latinSquare, row1, row2)
+//		else totalNUM < 15
+//			changeColumn (latinSquare, col1, col2)
+//		done if
+// done
+		

@@ -1,0 +1,54 @@
+Name: Yinsheng Dong
+Student Number: 11148648
+NSID: yid164
+Lecture Section: CMPT 115(02)
+
+1.
+Please Enter Your 1st Number
+100
+Please Enter Your 2nd Number
+0
+Please Enter Your 3rd Number
+-1
+You Entered 3 Numbers: 100 0 -1
+Arranged These Numbers: -1 0 100
+
+2.
+Please Enter Your 1st Number
+0
+Please Enter Your 2nd Number
+12
+Please Enter Your 3rd Number
+5
+You Entered 3 Numbers: 0 12 5
+Arranged These Numbers: 0 5 12
+
+3.
+Please Enter Your 1st Number
+3
+Please Enter Your 2nd Number
+2
+Please Enter Your 3rd Number
+5
+You Entered 3 Numbers: 3 2 5
+Arranged These Numbers: 2 3 5
+
+4.
+Please Enter Your 1st Number
+100
+Please Enter Your 2nd Number
+20
+Please Enter Your 3rd Number
+8
+You Entered 3 Numbers: 100 20 8
+Arranged These Numbers: 8 20 100
+
+5.
+Please Enter Your 1st Number
+-1
+Please Enter Your 2nd Number
+-10
+Please Enter Your 3rd Number
+100
+You Entered 3 Numbers: -1 -10 100
+Arranged These Numbers: -10 -1 100
