@@ -1,0 +1,156 @@
+// File: MagicSquareDD.txt
+// Author: CMPT 115
+// Version: 0.1 (design document only)
+
+
+//////////////////////////////////////////////////////////
+// 3x3 Magic Square Detection 
+// Design Document
+//
+// 1. Application's Purpose:
+//   To determine if a given arrangement of 9 numbers 
+//   is a magic square or not.  
+//   **Note: this program does not try to create a magic square!
+//
+// 2. Magic Square Definition: 
+//   - 3x3 grid  
+//   - contains integers 1 through 9 
+//   - every integer in 1-9 must appear exactly once
+//   - all rows, columns, and diagonals of the grid add up to 15
+//
+//   E.g.  Magic   not Magic
+//         8 1 6     1 9 6
+//         3 5 7     5 3 7
+//         4 9 2     4 8 2
+// 
+// 
+// 3. High level behaviour (main)
+//   Ask for the sequence of numbers ("square")
+//   Check that it is magic!
+//   Program should display "Yes" if it's magic, "no" otherwise
+//////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////
+//                      Algorithms
+///////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////
+// Algorithm 1: main()
+//   Pre: nothing
+//   Post: nothing
+//   Return: 0
+//
+//   1. Ask for the sequence of numbers ("square")
+//      call procedure getSquare()
+//
+//   2. Check that it is magic
+//      call procedure checkSquare()
+//
+//   3. Display "Yes!" if it's magic, "No!" otherwise
+
+
+// /////////////////////////////////////////////////////////
+// Algorithm 1.1: getSquare(square)
+//   Pre: given a 3x3 array to contain integers
+//   Post: obtains 9 numbers from the console, storing them in the
+//         given array
+//   Return: Nothing
+//
+//   1. Display a friendly prompt 
+//   2. Obtain 9 integers from the console
+
+
+// /////////////////////////////////////////////////////////
+// Algorithm 1.2: checkSquare(square)
+//   Pre: given a 3x3 array of integers
+//   Post: nothing
+//   Return: true if the square has all the properties of a magic
+//           square; false otherwise
+//
+//   1. To check the square has all integers 1 ... 9
+//      use function checkRange()
+//   2. To check 3 rows of the square sum to 15
+//      use function checkRows()
+//   3. To check 3 columns of the square sum to 15
+//      use function checkRows()
+//   4. To check 2 diagonals of the square sum to 15
+//      use function checkColumns()
+//   5. If all the checks are positive (true), return true
+//
+
+
+// /////////////////////////////////////////////////////////
+// Algorithm 1.2.1: checkRange(square)
+//   Pre: given a 3x3 array of integers
+//   Post: nothing
+//   Return: true if the square contains all the integers 1 .. 9
+//           false otherwise
+//
+//   1. Declare an array of 9 boolean values, called seen
+//      Initialize every value in seen to false
+//   2. for every value in the square
+//   2.1   seen[value-1] = true     // mark it as seen
+//   3. if any value in seen is still false, return false
+//      otherwise, return true
+//
+// Known Bug: checkRange() fails badly if square contains integers out of range!
+
+
+// /////////////////////////////////////////////////////////
+// Algorithm 1.2.2: checkRows(square)
+//   Pre: given a 3x3 array of integers
+//   Post: nothing
+//   Return: true if all the rows sum to 15
+//           false otherwise
+//
+//  1. call function checkSum() with values from first row
+//  2. call function checkSum() with values from second row
+//  3. call function checkSum() with values from third row
+//  4. if any call to checkSum() returned false, return false
+//     otherwise, return true
+
+
+// /////////////////////////////////////////////////////////
+// Algorithm 1.2.3: checkColumns(square)
+//   Pre: given a 3x3 array of integers
+//   Post: nothing
+//   Return: true if all the columns sum to 15
+//           false otherwise
+//
+//  1. call function checkSum() with values from first column
+//  2. call function checkSum() with values from second column
+//  3. call function checkSum() with values from third column
+//  4. if any call to checkSum() returned false, return false
+//     otherwise, return true
+
+
+// /////////////////////////////////////////////////////////
+// Algorithm 1.2.4: checkDiagonals(square)
+//   Pre: given a 3x3 array of integers
+//   Post: nothing
+//   Return: true if all the diagonals sum to 15
+//           false otherwise
+//
+//  1. call function checkSum() with values from upward diagonal
+//  2. call function checkSum() with values from downward diagonal
+//  4. if any call to checkSum() returned false, return false
+//     otherwise, return true
+
+
+// /////////////////////////////////////////////////////////
+// Algorithm 2: checkSum(array, N, sum)
+//   Pre: given an array of N integers, and a value in sum
+//   Post: nothing
+//   Return: true if the values in the array add up to sum
+//           false otherwise
+// 
+//  1. Add up all the values in the array.
+//  2. Return true if the result is equal to sum; false otherwise
+
+
+//////////////////////////////////////////////////////////
+//  End of Design Document
+//////////////////////////////////////////////////////////
+
