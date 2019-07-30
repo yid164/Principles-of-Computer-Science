@@ -1,0 +1,47 @@
+// Lab 1, Exercise on Slide 43
+using namespace std;
+
+#include <cstdlib>
+#include <cstdio>
+
+int main(void) {
+	FILE *infile;		// file handle for reading input
+	FILE *outfile;		// file handle for writing output
+	
+	int first, second;	// Variables to hold the two numbers to be read in.
+	int sum;			// The sum of the two numbers.
+	
+	// Open the file input.txt for reading
+	infile = fopen("input.txt", "r");
+	
+	// check for error in opening
+	if( infile == NULL ) {
+		printf("Error: input.txt could not be opened for reading.\n");
+		return -1;
+	}
+	
+	// Read in the two numbers from input.txt
+	fscanf(infile, "%i%i", &first, &second);
+	
+	// Close the input file since we are done with it now.
+	fclose(infile);
+	
+	sum = first + second;
+	
+	// Open the file sum.txt for writing
+	outfile = fopen("sum.txt", "w");
+	
+	// Check for error on opening 
+	if(outfile == NULL) {
+		printf("Error: sum.txt could not be opened for writing.\n");	
+		return -1;
+	}
+	
+	// Write the sum to the output file
+	fprintf(outfile, "%i", sum);
+	
+	// Close the output file since we're done with it.
+	fclose(outfile);
+	
+	return EXIT_SUCCESS;
+}

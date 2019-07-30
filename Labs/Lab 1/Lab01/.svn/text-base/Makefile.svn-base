@@ -1,0 +1,18 @@
+
+all:	Lab1.pdf
+
+exes:	lab1exercise1 lab1exercise2 lab1exercise3
+
+CXXFLAGS = -Wall
+
+%.pdf:	%.tex
+	-pdflatex $*
+	pdflatex $*
+
+.PHONY:	clean squeaky
+
+clean:
+	-${RM} *.log *.aux *.out *.nav *.snm *.toc *.vrb *~
+
+squeaky:	clean
+	-${RM} *.pdf lab1exercise1 lab1exercise2 lab1exercise3

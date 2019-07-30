@@ -1,0 +1,5 @@
+\beamer@endinputifotherversion {3.33pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Logging In and Becoming Familiar with the Lab}{4}{1}{1}
+\beamer@sectionintoc {2}{An Introduction to the UNIX Command-Line}{5}{1}{2}
+\beamer@sectionintoc {3}{Compiling C++ Programs with the Command-Line}{11}{1}{3}

@@ -1,0 +1,26 @@
+// Lab 1 Exercise on Slide 27
+using namespace std;
+
+#include <cstdlib>
+#include <cstdio>
+
+int main(void) {
+	char name[50];
+	int year;
+	
+	// Prompt for user's name
+	printf("Enter our name: ");
+	scanf("%s", name);
+	
+	// Prompt for user's birth year
+	printf("Enter your year of birth: ");
+	scanf("%i", &year);
+	
+	// Check whether birth year is divisible by 5.
+	if( year % 5 == 0) {
+		// If so, print the lucky message.
+		printf("You are very lucky, %s\n", name);
+	}
+
+	return EXIT_SUCCESS;
+}

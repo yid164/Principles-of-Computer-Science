@@ -1,0 +1,15 @@
+\frametitle{What to hand in}
+
+\begin{enumerate}
+\item Open TextWrangler (or any editor you want)
+\item Keep the Terminal (command-line) window open.  Select all the text (Command-A), copy it (Command-C),
+\item Move to the TextWrangler window; paste (Command-V) the work you did in the lab into TextWrangler.  Save it as \verb|Lab1_transcript.txt|.
+\item Upload \verb|Lab1_transcript.txt| to Moodle as part of Assignment 1.
+\item Grading:
+\begin{itemize}
+\item If you've used all the commands marked as \activity, in this lab, you'll get full marks.
+\item If you hand nothing in, you'll get zero marks.
+\item Your transcript will probably show evidence of commands being used incorrectly if you've misunderstood something.  That's perfectly fine; no marks will be deducted.
+\end{itemize}
+\end{enumerate}
+

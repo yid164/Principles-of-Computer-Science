@@ -1,0 +1,46 @@
+CMPT 115/117 Laboratory Outline and Instruction for TAs
+         Department of Computer Science
+         University of Saskatchewan
+ ** Lab 1 
+ ** Length: 80 min 
+==========================================
+
+Files on Moodle:
+  — source.cc
+  — printnumbers.cc
+
+What to hand in:
+  - a transcript (copy/paste) of the command-line work
+
+Main points of emphasis:
+  - get students working on the Macs
+  - indicate that Linux has many similar applications (when the Mac lab is full)
+  - students should begin to be comfortable with the command line 
+	-- they don't have to be experts
+  - students should be comfortable moving back and forth between Finder and Terminal
+  - Eclipse is still available for use, but command line compilation is a necessary skill
+  - don’t ignore compiler warnings, and emphasize debugging skills
+
+During the lab:
+
+  Part 1: Logging in and becoming familiar with the lab (10 min, unless something goes wrong)
+	- make sure everyone can log in
+	- go through Part 1 showing the icons for the programs.  
+  Part 2: An Introduction to the Command-Line (5 min demo, 25 min work)
+	- open Terminal, briefly demonstrate pwd, ls, mkdir, cd
+	- let students work through Part 2 on their own
+	- consult if they have problems
+  Part 3: Compiling C++ Programs with the Command-Line (5 min demon, 25 min work)
+	- open source.cc in TextWrangler
+	- compile and run using command line
+	- add cout , recompile, run;  
+	- make one or two syntax errors; compile, show errors
+	- let students work through Part 3
+
+
+History:
+** Created by Lingling Jin, November 2013
+** modified by MCH (1/1/2014)
+** modified by MCH (8/1/2014)
+** modified by MCH (27/12/2014)
+

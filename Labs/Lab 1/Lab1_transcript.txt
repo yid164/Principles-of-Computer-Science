@@ -1,0 +1,80 @@
+Last login: Tue Jun 28 21:08:33 on ttys000
+DONGYINENGdeMBP:~ Ken$ pwd
+/Users/Ken
+DONGYINENGdeMBP:~ Ken$ ls
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures
+DONGYINENGdeMBP:~ Ken$ ls -la
+total 56
+drwxr-xr-x+ 25 Ken   staff    850 Jun 28 21:15 .
+drwxr-xr-x   5 root  admin    170 Jan 11 21:30 ..
+-r--------   1 Ken   staff      9 Apr  6 23:48 .CFUserTextEncoding
+-rw-r--r--@  1 Ken   staff  14340 Jun 28 21:15 .DS_Store
+drwx------  11 Ken   staff    374 Jun 28 21:15 .Trash
+-rw-------   1 Ken   staff   1888 Jun 28 21:15 .bash_history
+drwxr-xr-x  34 Ken   staff   1156 Jun 28 21:15 .bash_sessions
+drwxr-xr-x   4 Ken   staff    136 Feb 22 15:08 .config
+drwxr-xr-x   2 Ken   staff     68 Feb 22 15:08 .config\BHOK\ST2015
+-rw-r--r--   1 Ken   staff    367 Feb 22 15:08 .config\BHOK\ST2015\Properties.dat
+drwx------   3 Ken   staff    102 Sep 12  2015 .cups
+drwxr-xr-x   8 Ken   staff    272 Apr  6 10:36 .eclipse
+drwxr-xr-x   3 Ken   staff    102 Feb 22 14:16 .local
+drwxr-xr-x   4 Ken   staff    136 Feb  1 20:24 .oracle_jre_usage
+drwxr-xr-x   8 Ken   staff    272 Jun  1 14:42 .p2
+drwxr-xr-x   6 Ken   staff    204 Sep 14  2015 .subversion
+drwx------   3 Ken   staff    102 Sep 12  2015 Applications
+drwx------+ 10 Ken   staff    340 Jun 28 21:15 Desktop
+drwx------+ 12 Ken   staff    408 Jun 27 16:51 Documents
+drwx------+  7 Ken   staff    238 Jun 28 20:09 Downloads
+drwx------@ 63 Ken   staff   2142 Jun 28 20:12 Library
+drwx------+  3 Ken   staff    102 Sep 12  2015 Movies
+drwx------+  8 Ken   staff    272 May 25 22:46 Music
+drwx------+  6 Ken   staff    204 Apr 22 17:08 Pictures
+drwxr-xr-x+  5 Ken   staff    170 Sep 12  2015 Public
+DONGYINENGdeMBP:~ Ken$ mkdir cmpt115
+DONGYINENGdeMBP:~ Ken$ ls
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures	cmpt115
+DONGYINENGdeMBP:~ Ken$ cd cmpt115
+DONGYINENGdeMBP:cmpt115 Ken$ pwd
+/Users/Ken/cmpt115
+DONGYINENGdeMBP:cmpt115 Ken$ ls
+lab1file.txt
+DONGYINENGdeMBP:cmpt115 Ken$ more lab1file.txt
+Hello!!~
+DONGYINENGdeMBP:cmpt115 Ken$ cd .
+DONGYINENGdeMBP:cmpt115 Ken$ pwd
+/Users/Ken/cmpt115
+DONGYINENGdeMBP:cmpt115 Ken$ ls .
+lab1file.txt
+DONGYINENGdeMBP:cmpt115 Ken$ cd ..
+DONGYINENGdeMBP:~ Ken$ pwd
+/Users/Ken
+DONGYINENGdeMBP:~ Ken$ cd cmpt115
+DONGYINENGdeMBP:cmpt115 Ken$ cd lab1
+DONGYINENGdeMBP:lab1 Ken$ mkdir text\ folder
+DONGYINENGdeMBP:lab1 Ken$ ls
+text folder
+DONGYINENGdeMBP:lab1 Ken$ ls
+source.cc	text folder
+DONGYINENGdeMBP:lab1 Ken$ g++ -Wall source.cc
+DONGYINENGdeMBP:lab1 Ken$ ls
+a.out		source.cc	text folder
+DONGYINENGdeMBP:lab1 Ken$ ./a.out
+DONGYINENGdeMBP:lab1 Ken$ g++ -Wall printnumbers.cc
+DONGYINENGdeMBP:lab1 Ken$ ls
+a.out		printnumbers.cc	source.cc	text folder
+DONGYINENGdeMBP:lab1 Ken$ ./a.out
+
+Here's the answer: 42
+The cake is a lie: 3.14159
+You didn't lose, you 1!
+DONGYINENGdeMBP:lab1 Ken$ g++ -Wall printnumbers.cc
+printnumbers.cc:17:21: error: expected ';' after return statement
+        return EXIT_SUCCESS
+                           ^
+                           ;
+1 error generated.
+DONGYINENGdeMBP:lab1 Ken$ ls
+a.out		printnumbers.cc	source.cc	text folder
+DONGYINENGdeMBP:lab1 Ken$ 

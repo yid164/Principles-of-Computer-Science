@@ -1,0 +1,18 @@
+// LAB 1 Exercise from Slide 20
+using namespace std;
+
+#include <cstdlib>
+#include <cstdio>
+
+int main(void) {
+	// Declarations from Question
+	int x = 12;
+	unsigned y = 6;
+	float z = 2.0;
+	
+	// Print the value of each variable
+	printf("x = %i\n", x);
+	printf("y = %u\n", y);
+	printf("z = %f\n", z);
+	return EXIT_SUCCESS;
+}
